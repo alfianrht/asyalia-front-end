@@ -102,9 +102,13 @@
     top: 35px;
   }
 
+  #sliderFix{
+    position: absolute;
+  }
+
   /* On Scroll Fixed */
   .fixed-slider{
-    position: fixed;
+    position: fixed !important;
     bottom: 60px;
     z-index: 100;
     animation: smoothScroll 1.2s forwards;
@@ -119,9 +123,9 @@
         }
     }
 
-    /* Custom Image Checkbox */
+  /* Custom Image Checkbox */
 
-.checkboxImg {
+  .checkboxImg {
     list-style-type: none;
   }
   
@@ -177,7 +181,7 @@
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: "\f00c";
-    background-color: #5e72e4;
+    background-color: #d47283;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
     transform: scale(1);
   }
