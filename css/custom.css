@@ -58,13 +58,9 @@
 .owl-carousel .item {
     position: relative;
     z-index: 100; 
-    -webkit-backface-visibility: hidden; 
   }
   
   /* end fix */
-  
-  .owl-nav{
-}
 
 .owl-nav>button>i{
     color: #d47283;

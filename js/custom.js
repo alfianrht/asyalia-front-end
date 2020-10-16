@@ -35,23 +35,46 @@ $("#buttonDress").click(function (){
 
 // Navigasi Scroll
 
+// All Section
+var dressSec = $("#dress").offset().top;
+var typeSec = $("#type").offset().top;
+var colorSec = $("#color").offset().top;
+var sizeSec = $("#size").offset().top;
+var lenghtSec = $("#lenght").offset().top;
+var khimarSec = $("#khimar").offset().top;
+var niqobSec = $("#niqob").offset().top;
+
 $("#nextButton").click(function (){
   $('html, body').stop(true, false).animate({
-      scrollTop: $("#dress").offset().top
+      scrollTop: dressSec
   }, 500);
 });
 
-var targetOffset = $("#dress").offset().top;
-
 var $w = $(window).scroll(function(){
   
-    if ( $w.scrollTop() > targetOffset ) {   
+    if ( $w.scrollTop() < dressSec ) {   
       $("#nextButton").click(function (){
         $('html, body').stop(true, false).animate({
-            scrollTop: $("#dress").offset().top
+            scrollTop: dressSec
         }, 500);
       });
-      // $("#nextButton").html('PILIH DRESS');
+      $("#nextButton").html('PILIH DRESS');
+    }
+    if ( $w.scrollTop() >= dressSec ) {   
+      $("#nextButton").click(function (){
+        $('html, body').stop(true, false).animate({
+            scrollTop: typeSec
+        }, 500);
+      });
+      $("#nextButton").html('PILIH TYPE');
+    }
+    if ( $w.scrollTop() > typeSec ) {   
+      $("#nextButton").click(function (){
+        $('html, body').stop(true, false).animate({
+            scrollTop: colorSec
+        }, 500);
+      });
+      $("#nextButton").html('PILIH COLOR');
     } else {
       $("#nextButton").click(function (){
         $('html, body').stop(true, false).animate({
@@ -64,4 +87,33 @@ var $w = $(window).scroll(function(){
 // Single Checkbox
 $('input[type="checkbox"]').on('change', function() {
   $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+});
+
+
+$('input[type="checkbox"]').on('change', function() {
+
+    if($(this).is('input[name="dressCheck[]"]'))
+      $('html, body').stop(true, false).animate({
+        scrollTop: typeSec
+      }, 500);
+    if($(this).is('input[name="typeCheck[]"]'))
+      $('html, body').stop(true, false).animate({
+        scrollTop: colorSec
+      }, 500);
+    if($(this).is('input[name="colorCheck[]"]'))
+      $('html, body').stop(true, false).animate({
+        scrollTop: sizeSec
+      }, 500);
+    if($(this).is('input[name="sizeCheck[]"]'))
+      $('html, body').stop(true, false).animate({
+        scrollTop: lenghtSec
+      }, 500);
+    if($(this).is('input[name="lenghtCheck[]"]'))
+      $('html, body').stop(true, false).animate({
+        scrollTop: khimarSec
+      }, 500);
+    if($(this).is('input[name="khimarCheck[]"]'))
+      $('html, body').stop(true, false).animate({
+        scrollTop: niqobSec
+      }, 500);
 });
