@@ -92,14 +92,14 @@
 .owl-nav .owl-prev {
     position: absolute;
     left: -25px;
-    top: 35px;
+    top: 30px;
   }
   
 
   .owl-nav .owl-next {
     position: absolute;
     right: -25px;
-    top: 35px;
+    top: 30px;
   }
 
   #sliderFix{
@@ -133,7 +133,7 @@
     display: inline-block;
   }
   
-  .checkboxImg input[type="checkbox"][id^="myCheckbox"] {
+  .checkboxImg input[type="checkbox"] {
     display: none;
   }
   
@@ -144,24 +144,7 @@
     margin: 10px;
     cursor: pointer;
     background-color: white;
-  }
-  
-  .checkboxImg label:before {
-    z-index: 2;
-    background-color: white;
-    color: white;
-    content: " ";
-    display: block;
-    border-radius: .375rem;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    line-height:35px;
-    transition-duration: 0.4s;
-    transform: scale(0);
+    border: 4px solid #ececec !important;
   }
   
   .checkboxImg label .imgcheckbox {
@@ -171,19 +154,11 @@
     transition-duration: 0.2s;
     transform-origin: 50% 50%;
   }
-  
+
   .checkboxImg :checked + label {
-    border: 1px solid rgba(0, 0, 0, .05);
+    border: 4px solid #05c801 !important;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-  }
-  
-  .checkboxImg :checked + label:before {
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
-    content: "\f00c";
-    background-color: #d47283;
-    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-    transform: scale(1);
+    transition-duration: 0.2s;
   }
   
   .checkboxImg :checked {

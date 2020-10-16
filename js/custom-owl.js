@@ -13,17 +13,25 @@ $('.owl-carousel').owlCarousel({
     ],
     responsive:{
         0:{
-            items:2
-        },
-        600:{
             items:3
         },
+        600:{
+            items:5
+        },
         1000:{
-            items:6
+            items:7
         },
         1400:{
-            items:6
+            items:7
         }
     }
 })
 
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
