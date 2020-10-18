@@ -88,14 +88,14 @@
 .owl-nav .owl-prev {
     position: absolute;
     left: -25px;
-    top: 30px;
+    top: 20px;
   }
   
 
   .owl-nav .owl-next {
     position: absolute;
     right: -25px;
-    top: 30px;
+    top: 20px;
   }
 
   #sliderFix{
@@ -105,7 +105,8 @@
   /* On Scroll Fixed */
   .fixed-slider{
     position: fixed !important;
-    bottom: 60px;
+    /* bottom: 60px; */
+    bottom: 0px;
     z-index: 100;
     animation: smoothScroll 1.2s forwards;
   }

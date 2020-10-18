@@ -6,6 +6,8 @@ $('.owl-carousel').owlCarousel({
     stagePadding: 20,
     margin: 10,
     dots:false,
+    URLhashListener:true,
+    startPosition: 'URLHash',
     nav: true,
     navText: [
         "<i class='fas fa-chevron-circle-left'></i>",
@@ -16,13 +18,13 @@ $('.owl-carousel').owlCarousel({
             items:3
         },
         600:{
-            items:5
+            items:4
         },
         1000:{
-            items:7
+            items:6
         },
         1400:{
-            items:7
+            items:6
         }
     }
 })
