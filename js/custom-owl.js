@@ -21,10 +21,10 @@ $('.owl-carousel').owlCarousel({
             items:4
         },
         1000:{
-            items:6
+            items:7
         },
         1400:{
-            items:6
+            items:7
         }
     }
 })

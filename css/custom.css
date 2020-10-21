@@ -163,3 +163,10 @@
     /* box-shadow: 0 0 5px #333; */
     z-index: -1;
   }
+
+  /* RESPONSIVE */
+
+  section{
+    height: fit-content;
+    min-height: 600px;
+  }
