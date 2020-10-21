@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shipping Methods</title>
+        <title>Order Detail</title>
         <link rel="shortcut icon" href="/img/primary-logo.png" type="image/x-icon">
 
         <!-- Bootstrap Style -->
@@ -65,7 +65,7 @@
             <ol class="breadcrumb bg-pink rounded-0" >
                 <li class="breadcrumb-item"><a class="text-muted text-decoration-none" href="#">Home</a></li>
                 <li class="breadcrumb-item"><a class="text-muted text-decoration-none" href="#">Checkout</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Shipping Methods</li>
+                <li class="breadcrumb-item active" aria-current="page">Order Detail</li>
             </ol>
         </nav>
         
@@ -141,37 +141,55 @@
                     </div>
 
                     <div class="col-3" id="">
-                        <div class="card py-2 px-lg-3 px-2 text-center bg-pink" style="height: auto; min-height:80px;">
+                        <div class="card py-2 px-lg-3 px-2 text-center bg-pink-2" style="height: auto; min-height:80px;">
                             <img id="" src="/img/icons/4.jpg" class="mx-auto" alt="..." style="height: 35px; width:auto;">
                             <div class="card-body p-0">
-                                <p class="m-0 mt-2 text-muted font-weight-bold" style="font-size:8px; line-height: 16px;">ORDER DETAIL</small></p>
+                                <p class="m-0 mt-2 text-white font-weight-bold" style="font-size:8px; line-height: 16px;">ORDER DETAIL</small></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <form class="needs-validation mt-3" novalidate="">
 
+                    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                          <strong class="d-inline-block mb-2 text-pink-2">Humaira Series</strong>
+                          <h3 class="mb-0">Rp. 45.000</h3>
+                        </div>
+                        <div class="col-auto d-none d-lg-block text-center">
+                          <svg class="bd-placeholder-img" width="200" height="150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+                        </div>
+                    </div>
+
                     <div class="mt-3">
-                        <h5>Shipping Methods</h5>
+                        <h5>Order Notes & Summary</h5>
+                    </div>
+
+                    <div class="d-block my-3">
+                        <textarea class="form-control" id="" rows="3" placeholder="Please write notes of your order"></textarea>
+                    </div>
+
+                    <div class="mt-3">
+                        <h5>Payment Methods</h5>
                     </div>
                 
                     <div class="d-block my-3">
                         <div class="custom-control custom-radio">
                           <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-                          <label class="custom-control-label" for="credit">JNE</label>
+                          <label class="custom-control-label" for="credit">BCA</label>
                         </div>
                         <div class="custom-control custom-radio">
                           <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                          <label class="custom-control-label" for="debit">J&T</label>
+                          <label class="custom-control-label" for="debit">BNI</label>
                         </div>
                         <div class="custom-control custom-radio">
                           <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                          <label class="custom-control-label" for="paypal">Anteraja</label>
+                          <label class="custom-control-label" for="paypal">BRI</label>
                         </div>
                     </div>
         
                     <hr class="mb-4">
-                    <button class="btn btn-pink-2 text-white btn-lg btn-block" type="submit">Continue</button>
+                    <button class="btn btn-pink-2 text-white btn-lg btn-block" type="submit">Order Now</button>
                 </form>
               </div>
             </div>
