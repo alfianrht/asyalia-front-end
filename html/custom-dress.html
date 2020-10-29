@@ -22,6 +22,12 @@
         <script src="https://kit.fontawesome.com/e055e6937d.js" crossorigin="anonymous"></script>
 
 
+        <script src="/node_modules/jquery/dist/jquery.js"></script>
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
     </head>
 
     <body>
@@ -83,7 +89,7 @@
         </div>
 
         <div class="container">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs" id="tabs" role="tablist">
                 <li class="nav-item" role="presentation">
                   <a class="nav-link text-muted active" id="dressSec-tab" data-toggle="tab" href="#dressSec" role="tab" aria-controls="dressSec" aria-selected="true">DRESS</a>
                 </li>
@@ -516,8 +522,8 @@
             <div class="container d-block justify-content-end">
                 <ul class="navbar-nav">
                     <li class="nav-item mr-2 ml-auto">
-                        <button type="button" class="btn px-4 text-muted font-weight-bold">BACK</button>
-                        <button type="button" class="btn btn-outline-pink-2 px-4 text-pink-2" id="nextButton">NEXT</button>
+                        <button type="button" class="btn px-4 text-muted font-weight-bold btnPrevious">BACK</button>
+                        <button type="button" class="btn btn-outline-pink-2 px-4 text-pink-2 btnNext" id="nextButton">NEXT</button>
                     </li>
                 </ul>
             </div>
@@ -562,8 +568,6 @@
             </div>
         </div>
 
-        <script src="/node_modules/jquery/dist/jquery.js"></script>
-        <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         
         <!-- Owl JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>

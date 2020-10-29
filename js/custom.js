@@ -124,79 +124,10 @@ $('input[type="checkbox"]').on('change', function() {
   $('input[name="' + this.name + '"]').not(this).prop('checked', false);
 });
 
-// $('input[name="dressCheck[]"]').click(function() {
-//   if($(this).is(":checked"))
-//     $("#imgDress").attr("src","/img/icons/check_circle-24px.svg");
-//   if(!$(this).is(":checked"))
-//     $("#imgDress").attr("src","/img/icons/1.jpg");
-// });
+$('.btnNext').click(function() {
+  $('.nav-tabs .active').parent().next('li').find('a').trigger('click');
+});
 
-// $('input[name="typeCheck[]"]').click(function() {
-//   if($(this).is(":checked"))
-//     $("#imgType").attr("src","/img/icons/check_circle-24px.svg");
-//   if(!$(this).is(":checked"))
-//     $("#imgType").attr("src","/img/icons/2.jpg");
-// }); 
-
-// $('input[name="colorCheck[]"]').click(function() {
-//   if($(this).is(":checked"))
-//     $("#imgColor").attr("src","/img/icons/check_circle-24px.svg");
-//   if(!$(this).is(":checked"))
-//     $("#imgColor").attr("src","/img/icons/3.jpg");
-// }); 
-
-// $('input[name="sizeCheck[]"]').click(function() {
-//   if($(this).is(":checked"))
-//     $("#imgSize").attr("src","/img/icons/check_circle-24px.svg");
-//   if(!$(this).is(":checked"))
-//     $("#imgSize").attr("src","/img/icons/4.jpg");
-// }); 
-
-// $('input[name="lenghtCheck[]"]').click(function() {
-//   if($(this).is(":checked"))
-//     $("#imglenght").attr("src","/img/icons/check_circle-24px.svg");
-//   if(!$(this).is(":checked"))
-//     $("#imglenght").attr("src","/img/icons/1.jpg");
-// }); 
-
-// $('input[name="khimarCheck[]"]').click(function() {
-//   if($(this).is(":checked"))
-//     $("#imgKhimar").attr("src","/img/icons/check_circle-24px.svg");
-//   if(!$(this).is(":checked"))
-//     $("#imgKhimar").attr("src","/img/icons/1.jpg");
-// }); 
-
-// $('input[name="niqobCheck[]"]').click(function() {
-//   if($(this).is(":checked"))
-//     $("#imgNiqob").attr("src","/img/icons/check_circle-24px.svg");
-//   if(!$(this).is(":checked"))
-//     $("#imgNiqob").attr("src","/img/icons/1.jpg");
-// }); 
-
-// $('input[type="checkbox"]').on('change', function() {
-
-//   if($(this).is('input[name="dressCheck[]"]'))
-//       $('html, body').stop(true, false).animate({
-//         scrollTop: typeSec
-//       }, 500);
-//     if($(this).is('input[name="typeCheck[]"]'))
-//       $('html, body').stop(true, false).animate({
-//         scrollTop: colorSec
-//       }, 500);
-//     if($(this).is('input[name="colorCheck[]"]'))
-//       $('html, body').stop(true, false).animate({
-//         scrollTop: sizeSec
-//       }, 500);
-//     if($(this).is('input[name="sizeCheck[]"]'))
-//       $('html, body').stop(true, false).animate({
-//         scrollTop: lenghtSec
-//       }, 500);
-//     if($(this).is('input[name="lenghtCheck[]"]'))
-//       $('html, body').stop(true, false).animate({
-//         scrollTop: khimarSec
-//       }, 500);
-//     if($(this).is('input[name="khimarCheck[]"]'))
-//       $('html, body').stop(true, false).animate({
-//         scrollTop: niqobSec
-//       }, 500);
-// });
+$('.btnPrevious').click(function() {
+  $('.nav-tabs .active').parent().prev('li').find('a').trigger('click');
+});
